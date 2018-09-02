@@ -15,9 +15,9 @@ public class InputHandler {
     }
 
     List<String> readInputFile(String inputFileName) {
-        List<String> inputLines = new List<String>();
+        List<String> inputLines = new ArrayList<>();
         try {
-           Scanner sc = new Scanner(new FileReader(inputFile));
+           Scanner sc = new Scanner(new FileReader(inputFileName));
             String str;
             while(sc.hasNext()){
                 str = sc.next();
